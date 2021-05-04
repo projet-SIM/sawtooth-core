@@ -905,7 +905,7 @@ struct QueueLimit {
     avg: RollingAverage,
 }
 
-const QUEUE_MULTIPLIER: usize = 10;
+const QUEUE_MULTIPLIER: usize = 200;
 
 impl QueueLimit {
     pub fn new(sample_size: usize, initial_value: usize) -> QueueLimit {
